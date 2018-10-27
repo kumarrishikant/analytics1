@@ -40,3 +40,4 @@ predict(prunetree2, newdata=testdata, type='prob')
 #prune the tree with cp value
 #plot the graph
 #predict for new cases
+
