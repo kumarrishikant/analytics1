@@ -15,9 +15,9 @@ head(dataset)
 str(dataset)
 summary(dataset)
 dim(dataset)
-View(dataset)
+#View(dataset)
 dataset$gender = factor(dataset$gender)
-
+dataset$purchased = factor(dataset$purchased)
 
 # Split the dataset into the Training set and Test set
 #install.packages('caTools')
