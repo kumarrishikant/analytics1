@@ -11,13 +11,15 @@ head(demoFreq)
 #wordcloud
 wordcloud2(demoFreq, size=1.6)
 ?wordcloud
-word = c('marketing', 'consumer', 'analysis', 'Strategy')
-freq = c(30,20,15,36)
-df1 = data.frame(word. freq)
+word = c('Big Data', 'Analytics', 'Data', 'Mining','Operation','Logistics','TAT','Supply Chain Management','MBA')
+freq = c(30,20,15,36,60,65,56,20,90)
+df1 = data.frame(word,freq)
 rownames(df1) = word
+df1 = edit(df1)
+df1 
 head(df1)
 #df1 = head(demoFreq)
-wordcloud2(df1, size=.4)
+wordcloud2(df1, size=.6)
 
 
 # Gives a proposed palette
@@ -41,7 +43,6 @@ wordcloud2(demoFreq, size = 0.7, shape = 'star')
 
 #rotation
 ww=wordcloud2(demoFreq, size = 2.3, minRotation = -pi/6, maxRotation = -pi/6, rotateRatio = 1)
-ww
 
 #chinese
 demoFreqC
