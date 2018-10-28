@@ -12,7 +12,7 @@ arules::LIST(Groceries[1:6])  #another view
 arules::inspect(Groceries[1:5])
 
 #Find Frequent Itemset
-frequentItems = eclat (Groceries, parameter = list(supp = 0.01, minlen= 2, maxlen = 5)) 
+frequentItems = eclat (Groceries, parameter = list(supp = 0.01, minlen= 2, maxlen = 5))
 inspect(frequentItems[1:10])
 frequentItems
 inspect(frequentItems[10:100])
@@ -27,7 +27,7 @@ itemFrequencyPlot(Groceries,topN = 15,type="absolute")
 itemFrequencyPlot(Groceries, topN = 10, type='relative')
 abline(h=0.15)
 
-# Create rules and the relationship between items
+#Create rules and the relationship between items
 #parameters are min filter conditions 
 rules = apriori(Groceries, parameter = list(supp = 0.005, conf = 0.5, minlen=2))
 rules
